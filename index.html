@@ -14,7 +14,7 @@
            <div class="navbar">
 
             <div class="logo-container">
-                <img src="./images/userAsset/nav-logo.jpg" class="logo" alt="">
+                <img src="./images/userAsset/nav-logo-removebg-preview.png" class="logo" alt="">
                 <div class="logo-text">arsh Balwani</div>
             </div>
 
@@ -22,6 +22,7 @@
                 <div><a href="#projects">Projects</a></div>
                 <div><a href="#skills">Skills</a></div>
                 <div><a href="#contactme">Contact Me</a></div>
+                <img class="mode" id="icon" src="images/userAsset/moon.png" alt="">
             </div>
             </div>
 
@@ -209,15 +210,17 @@
                         <img class="skills-logo" src="./images/stack/CSS.png" alt="">
                         <img class="skills-logo" src="./images/stack/Javascript.svg" alt="">
                         <img class="skills-logo" src="./images/stack/Express.png" alt="">
-                        <img class="skills-logo" src="./images/stack/NextJsCircle.png" alt="">
+                        <!-- <img class="skills-logo" src="./images/stack/NextJsCircle.png" alt=""> -->
                         <img class="skills-logo" src="./images/stack/Tailwind.png" alt="">
                         <img class="skills-logo" src="./images/stack/NodeJs.svg" alt="">
                         <img class="skills-logo" src="./images/stack/MongoDB.svg" alt="">
-                        <img class="skills-logo" src="./images/stack/Redux.svg" alt="">
-                        <img class="skills-logo" src="./images/stack/Vercel.svg" alt="">
+                        <!-- <img class="skills-logo" src="./images/stack/Redux.svg" alt=""> -->
+                        <!-- <img class="skills-logo" src="./images/stack/Vercel.svg" alt=""> -->
                         <img class="skills-logo" src="./images/stack/Git.svg" alt="">
                         <img class="skills-logo" src="./images/stack/Github.svg" alt="">
-                        <img class="skills-logo" src="./images/stack/Tailwind.png" alt="">
+                        <!-- <img class="skills-logo" src="./images/stack/Tailwind.png" alt=""> -->
+                        <img  class="skills-logo" src="./images/stack/python2-removebg-preview.png" alt="">
+                        <img  class="skills-logo" src="./images/stack/cpp-removebg-preview.png" alt="">
             </div>
         </div>
 
@@ -256,7 +259,7 @@
                         </div>
 
                         <div>
-                            <button type="submit" class="btn-pink" id="submit-btn">
+                            <button type="submit" class="btn-pink" id="submit-btn" formaction="mailto:balwaniharsh1001@gmail.com">
                                 Send Message <i class="submit-icon fa-solid fa-paper-plane"></i>
                             </button>
                         </div>
@@ -283,11 +286,26 @@
                     </div>
 
                     <div class="icon-wrapper">
-                      <i class="fa-brands fa-linkedin icon"></i>  
-                      <i class="fa-brands fa-github icon"></i>  
-                      <i class="fa-brands fa-twitter icon"></i>  
-                      <i class="fa-brands fa-instagram icon"></i>  
-                      <i class="fa-regular fa-envelope icon"></i>  
+                        <a href="https://www.linkedin.com/in/harsh-balwani-599176221" target="_blank">
+                        <i class="fa-brands fa-linkedin icon"></i>  
+                        </a>
+                      <a href="https://github.com/HarshBalwanix" target="_blank">
+                        <i class="fa-brands fa-github icon"></i> 
+                      </a>
+                         <a href="https://twitter.com/HarshBalwani7" target="_blank">
+                            <i class="fa-brands fa-twitter icon"></i> 
+                         </a>
+                       <a href="" target="_blank">
+                           <i class="fa-brands fa-instagram icon"></i>  
+                       </a>
+                       <a href="mailto:balwaniharsh1001@gmail.com" target="_blank">
+                           <i class="fa-regular fa-envelope icon"></i>
+                        </a>
+                        <div class="leet">
+                       <a href="https://leetcode.com/HarshX/" target="_blank">
+                           <i class="cib-leetcode"></i>
+                           </a>
+                        </div>
                     </div>
 
 
@@ -314,6 +332,21 @@
       backSpeed: 80,
       backDelay: 1000,
     });
+  </script>
+
+  <script>
+    var mode=document.getElementById("icon");
+    mode.onclick =function()
+    {
+        document.body.classList.toggle("dark-theme");
+        if(document.body.classList.contains("dark-theme"))
+        {
+            icon.src="images/userAsset/sun.png";
+        }
+        else{
+            icon.src="images/userAsset/moon.png";
+        }
+    }
   </script>
 </body>
 </html>

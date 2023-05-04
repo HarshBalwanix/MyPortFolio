@@ -11,12 +11,25 @@
 }
 :root{
     --bgOrange:#e84949;
+    --primary-color:#F2F1F3;
+    --secondary-color: #212121;
+    --faded-color:rgb(231,231,231);
+    --black:rgb(231,231,231);
+}
+.dark-theme
+{
+    --primary-color:#212121;
+    --secondary-color: #edf2fc; 
+    --faded-color: #242424;
+    --black:black;
+
 }
 #wrapper
 {
     height: 100vh;
     overflow-y: auto;
     overflow-x: hidden;
+    background-color: var(--primary-color);
 }
 
 .container
@@ -31,7 +44,7 @@
     justify-content: space-between;
     align-items: center;
     padding-top: 1rem;
-
+    color: var(--secondary-color);
 }
 .logo{
     width:80px;
@@ -62,7 +75,7 @@
     cursor: pointer;
 }
 .nav-items div a{
-    color: black;
+    color:var(--secondary-color);
 }
 .nav-items div:hover{
     font-weight: bold;
@@ -87,13 +100,14 @@ a{
 
 .faded-text{
     user-select: none;
-    font-size: 7rem;
-    color:rgb(231,231,231);
+    font-size: 8rem;
+    color:var(--faded-color);
     position: absolute;
     bottom: -16%;
     left: -5%;
     font-weight: bold;
-    transition: all 3s;
+    opacity: 1;
+    transition: all 500ms;
 }
 .hero-section-left{
     display: flex;
@@ -125,6 +139,7 @@ a{
     margin-top: 1rem;
     width: 70%;
     font-weight: 500;
+    color: var(--secondary-color);
 }
 
 .btn-pink
@@ -308,7 +323,7 @@ a{
 }
 .project-section
 {
-    background-color: rgb(231, 231, 231);
+    background-color: var(--black);
     /* margin: 4rem; */
 }
 .page-header
@@ -454,17 +469,17 @@ border: none;
     transform: scale(1.1);
 }
 #project1{
-    background-image: url('./images/projects/Project1.png');
+    background-image: url('./images/projects/flightbookingsystem.jpeg');
 }
 #project2{
-    background-image: url('./images/projects/Project2.png');
+    background-image: url('./images/projects/facerecog.jpg');
     margin-left: 120px;
 }
 #project3{
-    background-image: url('./images/projects/Project3.png');
+    background-image: url('./images/projects/chatbotdone.png');
 }
 #project4{
-    background-image: url('./images/projects/Project4.png');
+    background-image: url('./images/projects/twitterbot.jpg');
     margin-left: 120px;
 }
 @media (max-width:1300px)
@@ -561,13 +576,15 @@ gap: 30px;
 .skill-fade-text
 {
     position: absolute;
-    font-size: 15em;
+    font-size: 16.2em;
     font-weight: bold;
-    color: rgb(231, 231, 231);
+    color: var(--faded-color);
     bottom: -34.5%;
     right: -15%;
     user-select: none;
-    overflow-y:  hidden;
+    overflow-x:  hidden;
+    opacity: 1;
+    transition: all 1s;
 }
 .blob-style
 {
@@ -589,6 +606,7 @@ gap: 30px;
 {
     width: 90px;
     transition: all 0.5s;
+    height: 90px;
 }
 .skills-logo:hover{
     transform: scale(1.2);
@@ -611,11 +629,12 @@ gap: 30px;
 }
 .skill-subheading p{
     margin: 15px 0;
+    color: var(--secondary-color);
 }
 .contactus-form-container
 {
     width: 100%;
-    background-color: rgb(231, 231, 231); 
+    background-color: var(--black); 
     margin-top: 25px;
     display: flex;
     justify-content: center;
@@ -723,4 +742,14 @@ footer
 {
     display: flex;
     gap: 1rem;
+}
+.mode
+{
+    width: 30px;
+    cursor: pointer;
+}
+.leet
+{
+    width: 35px;
+    height: 35px; 
 }
