@@ -198,7 +198,7 @@ a{
    filter: grayscale(1);
    transition:all 1s ;
    animation: scaleImage 5s linear infinite;    
-
+    
 }
 
 .user-image img
