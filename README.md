@@ -1,6 +1,7 @@
 # Harsh Balwani's Portfolio
 
-Welcome to my GitHub portfolio! This repository showcases my projects, skills, and contact information. Feel free to explore and get in touch.
+Welcome to my GitHub portfolio! This repository showcases my projects, skills, and contact information. Feel free to explore and get in touch.Explore my GitHub portfolio [here](https://harshbalwanix.github.io/MyPortFolio/)
+
 
 ## Projects
 
